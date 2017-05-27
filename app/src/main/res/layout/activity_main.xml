@@ -30,6 +30,7 @@
         android:id="@+id/addComment"
         style="@style/CommentStyle"
         android:background="@color/player_color"
-        android:text="@string/commenttext" />
+        android:text="@string/commenttext"
+        android:onClick="openCommentEntry"/>
 
 </LinearLayout>
