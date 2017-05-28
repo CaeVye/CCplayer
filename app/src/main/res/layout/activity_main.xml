@@ -68,6 +68,11 @@
         android:background="@color/player_color"
         android:text="@string/commenttext" />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="32dp">
 
     <TextView
         android:id="@+id/download"
@@ -75,7 +80,8 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/player_color"
-        android:text="@string/downloadtext" />
+        android:text="@string/downloadtext"
+        android:layout_weight="1"/>
 
 
 
@@ -86,14 +92,18 @@
         android:layout_height="wrap_content"
         android:background="@color/player_color"
         android:onClick="openCommentEntry"
-        android:text="@string/add_comment" />
+        android:text="@string/add_comment"
+        android:layout_weight="1"/>
 
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         style="@style/SendStyle"
-        android:text="@string/activity_send">
+        android:text="@string/activity_send"
+        android:layout_weight="1"/>
+
+    </LinearLayout>
 
 
 
