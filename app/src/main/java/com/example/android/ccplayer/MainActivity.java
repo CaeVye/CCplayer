@@ -19,4 +19,17 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
         //write code here
     }
+
+
+    public void openPlayLibrary(View view) {
+        Intent i = new Intent(this, PlayLibrary.class);
+        startActivity(i);
+    }
+
+
+    public void openPlayStream(View view) {
+        Intent i = new Intent(this, PlayStream.class);
+        startActivity(i);
+    }
+
 }

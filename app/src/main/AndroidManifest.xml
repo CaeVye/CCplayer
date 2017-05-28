@@ -16,9 +16,16 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".AddComment" />
-        <activity android:name=".SendActivity" />
-        <activity android:name=".PlayLibrary"></activity>
+        <activity
+            android:name=".AddComment"
+            android:label="@string/add_comment" />
+        <activity
+            android:name=".SendActivity"
+            android:label="@string/activity_send" />
+        <activity
+            android:name=".PlayLibrary"
+            android:label="@string/activity_play_library" />
+
     </application>
 
 </manifest>

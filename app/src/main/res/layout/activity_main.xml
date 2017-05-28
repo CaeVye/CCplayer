@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
@@ -8,29 +7,94 @@
     android:orientation="vertical"
     tools:context="com.example.android.ccplayer.MainActivity">
 
+
     <TextView
         android:id="@+id/title"
         style="@style/TitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/player_color"
-        android:text="@string/playertext" />
+        android:text="@string/tracktitle" />
+
+
+    <TextView
+        android:id="@+id/infoscreen"
+        style="@style/TitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_color"
+        android:text="@string/info" />
+
+    <TextView
+        android:id="@+id/playercontrols"
+        style="@style/TitleStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_color"
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/play"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:src="@drawable/ic_play_arrow_black_24dp" />
+
+            <ImageView
+                android:id="@+id/previous"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/play"
+                android:layout_toStartOf="@id/play"
+                android:src="@drawable/ic_skip_previous_black_24dp" />
+
+            <ImageView
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/play"
+                android:layout_toEndOf="@id/play"
+                android:src="@drawable/ic_skip_next_black_24dp" />
+
+        </RelativeLayout>
+
 
     <TextView
         android:id="@+id/playerControls"
         style="@style/ControlsStyle"
-        android:background="@color/player_color"
-         />
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_color"/>
+
+
 
     <TextView
         android:id="@+id/download"
         style="@style/DownloadStyle"
-        android:background="@player_color"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_color"
         android:text="@string/downloadtext" />
+
+    <TextView
+        android:id="@+id/readComment"
+        style="@style/CommentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/player_color"
+        android:text="@string/commenttext" />
 
     <TextView
         android:id="@+id/addComment"
         style="@style/CommentStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         android:background="@color/player_color"
-        android:text="@string/commenttext"
-        android:onClick="openCommentEntry"/>
+        android:onClick="openCommentEntry"
+        android:text="@string/add_comment" />
 
 </LinearLayout>
