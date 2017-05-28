@@ -22,17 +22,14 @@
         style="@style/TitleStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@color/player_color"
+        android:layout_margin="32dp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="italic"
+        android:textSize="12sp"
+        android:background="@color/info_color"
         android:text="@string/info" />
 
-    <TextView
-        android:id="@+id/playercontrols"
-        style="@style/TitleStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/player_color"/>
-
-        <RelativeLayout
+    <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:gravity="center">
@@ -61,15 +58,6 @@
                 android:src="@drawable/ic_skip_next_black_24dp" />
 
         </RelativeLayout>
-
-
-    <TextView
-        android:id="@+id/playerControls"
-        style="@style/ControlsStyle"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@color/player_color"/>
-
 
 
     <TextView
