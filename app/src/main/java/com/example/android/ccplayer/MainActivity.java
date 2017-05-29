@@ -32,4 +32,18 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
+
+    public void openSend(View view) {
+        Intent i = new Intent(this, SendActivity.class);
+        startActivity(i);
+    }
+
+
+    public void openDownload(View view) {
+        Intent i = new Intent(this, Download.class);
+        startActivity(i);
+    }
+
+
+
 }

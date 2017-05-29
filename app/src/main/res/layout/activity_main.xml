@@ -19,45 +19,40 @@
 
     <TextView
         android:id="@+id/infoscreen"
-        style="@style/TitleStyle"
+        style="@style/AlbumStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="32dp"
-        android:fontFamily="sans-serif-condensed"
-        android:textStyle="italic"
-        android:textSize="12sp"
-        android:background="@color/info_color"
         android:text="@string/info" />
 
     <RelativeLayout
-            android:layout_width="match_parent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <ImageView
+            android:id="@+id/play"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:gravity="center">
+            android:layout_gravity="center_horizontal"
+            android:src="@drawable/ic_play_arrow_black_24dp" />
 
-            <ImageView
-                android:id="@+id/play"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_gravity="center_horizontal"
-                android:src="@drawable/ic_play_arrow_black_24dp" />
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@+id/play"
+            android:layout_toStartOf="@id/play"
+            android:src="@drawable/ic_skip_previous_black_24dp" />
 
-            <ImageView
-                android:id="@+id/previous"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toLeftOf="@+id/play"
-                android:layout_toStartOf="@id/play"
-                android:src="@drawable/ic_skip_previous_black_24dp" />
+        <ImageView
+            android:id="@+id/next"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/play"
+            android:layout_toRightOf="@+id/play"
+            android:src="@drawable/ic_skip_next_black_24dp" />
 
-            <ImageView
-                android:id="@+id/next"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/play"
-                android:layout_toEndOf="@id/play"
-                android:src="@drawable/ic_skip_next_black_24dp" />
-
-        </RelativeLayout>
+    </RelativeLayout>
 
 
     <TextView
@@ -75,37 +70,50 @@
         android:layout_marginTop="32dp">
 
     <TextView
-        android:id="@+id/download"
         style="@style/DownloadStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/player_color"
         android:text="@string/downloadtext"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:onClick="openDownload"
+        android:textAppearance="?android:textAppearanceSmall"
+        />
 
 
 
     <TextView
-        android:id="@+id/addComment"
         style="@style/CommentStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/player_color"
         android:onClick="openCommentEntry"
         android:text="@string/add_comment"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:textAppearance="?android:textAppearanceSmall"/>
 
 
     <TextView
+        style="@style/SendStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        style="@style/SendStyle"
         android:text="@string/activity_send"
-        android:layout_weight="1"/>
+        android:layout_weight="1"
+        android:onClick="openSend"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_marginBottom="16dp"/>
 
     </LinearLayout>
 
 
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toggle"
+        android:textAppearance="?android:textAppearanceSmall"
+        />
 
 
 </LinearLayout>
