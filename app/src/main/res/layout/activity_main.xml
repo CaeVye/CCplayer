@@ -63,6 +63,18 @@
         android:background="@color/player_color"
         android:text="@string/commenttext" />
 
+
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/toggle"
+        android:textAppearance="?android:textAppearanceSmall"
+        android:layout_margin="16dp"
+        />
+
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
@@ -83,7 +95,7 @@
 
 
     <TextView
-        style="@style/CommentStyle"
+        style="@style/DownloadStyle"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@color/player_color"
@@ -107,13 +119,6 @@
 
 
 
-    <Switch
-        android:id="@+id/switch1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="@string/toggle"
-        android:textAppearance="?android:textAppearanceSmall"
-        />
 
 
 </LinearLayout>
