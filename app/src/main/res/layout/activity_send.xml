@@ -6,4 +6,20 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.example.android.ccplayer.SendActivity">
+
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="368dp"
+        android:text="@string/activity_send"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp" />
+
+    <Button
+    android:id="@+id/email_sendbutton"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/send_button" />
+
+
+
 </android.support.constraint.ConstraintLayout>

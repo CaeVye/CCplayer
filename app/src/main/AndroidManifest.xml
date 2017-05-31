@@ -27,7 +27,7 @@
             android:label="@string/activity_play_library" />
         <activity
             android:name=".Download"
-            android:label="@string/downloadtext"/>
+            android:label="@string/download_text"/>
 
 
     </application>
