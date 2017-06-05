@@ -3,6 +3,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:paddingTop="16dp"
+    android:paddingBottom="16dp"
+    android:paddingLeft="16dp"
+    android:paddingRight="16dp"
     android:background="@color/player_color"
     android:orientation="vertical"
     tools:context="com.example.android.ccplayer.MainActivity">
@@ -24,11 +28,19 @@
         android:layout_height="wrap_content"
         android:text="@string/info" />
 
-    <RelativeLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:orientation="horizontal"
         android:gravity="center">
 
+
+
+        <ImageView
+            android:id="@+id/previous"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_skip_previous_black_24dp" />
         <ImageView
             android:id="@+id/play"
             android:layout_width="wrap_content"
@@ -37,22 +49,12 @@
             android:src="@drawable/ic_play_arrow_black_24dp" />
 
         <ImageView
-            android:id="@+id/previous"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_toLeftOf="@+id/play"
-            android:layout_toStartOf="@id/play"
-            android:src="@drawable/ic_skip_previous_black_24dp" />
-
-        <ImageView
             android:id="@+id/next"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_toEndOf="@id/play"
-            android:layout_toRightOf="@+id/play"
             android:src="@drawable/ic_skip_next_black_24dp" />
 
-    </RelativeLayout>
+    </LinearLayout>
 
 
     <TextView
@@ -105,7 +107,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        android:layout_marginTop="32dp">
+        android:layout_marginTop="4dp">
 
     <TextView
         style="@style/DownloadStyle"

@@ -28,8 +28,6 @@
         <activity
             android:name=".Download"
             android:label="@string/download_text"/>
-
-
     </application>
 
 </manifest>
